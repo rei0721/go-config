@@ -1,0 +1,4 @@
+app:
+    name: BasicApp
+    version: 1.0.0
+    description: 基础配置管理示例应用

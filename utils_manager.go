@@ -15,12 +15,12 @@ func (m *Manager[T]) InitializeValidate() bool {
 	return m.initializeValidate
 }
 
-// GetConfig 获取配置
+// GetConfigCopy 获取配置副本
 // 返回值：
 //
 //	*Config: 配置副本
 //	error: 获取过程中的错误
-func (m *Manager[T]) GetConfig() (*T, error) {
+func (m *Manager[T]) GetConfigCopy() (*T, error) {
 	//m := Default()
 	m.rwMutex.RLock()
 	defer m.rwMutex.RUnlock()

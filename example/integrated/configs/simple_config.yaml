@@ -1,0 +1,11 @@
+server:
+  host: "localhost"
+  port: 8080
+
+database:
+  url: "sqlite://./simple.db"
+  max_conns: 10
+
+features:
+  enable_cache: true
+  log_level: "info"

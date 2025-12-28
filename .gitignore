@@ -1,0 +1,23 @@
+.data
+.cache
+dist
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+docs/init_prompt
+
+# .trae/*
+
+.kiro/*

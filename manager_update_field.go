@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-// UpdateField 更新配置字段
+// UpdateFieldToFile 更新配置字段并写入文件
 // 参数：
 //
 //	updateFunc: 更新函数
@@ -15,7 +15,7 @@ import (
 // 返回值：
 //
 //	error: 更新过程中的错误
-func (m *Manager[T]) UpdateField(updateFunc func(*T)) error {
+func (m *Manager[T]) UpdateFieldToFile(updateFunc func(*T)) error {
 	m.rwMutex.Lock()
 	defer m.rwMutex.Unlock()
 
